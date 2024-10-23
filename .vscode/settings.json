@@ -1,0 +1,7 @@
+{
+    "markdown.styles": [
+        "./snippets/knowledge-base.css"
+    ],
+    "markdown-preview-enhanced.enableScriptExecution": true,
+    "markdown-preview-enhanced.mermaidTheme": "dark"
+}
