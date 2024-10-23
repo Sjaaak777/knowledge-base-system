@@ -1,93 +1,68 @@
-# 🗄️ Kennisbank Systeem
+# 📚 Kennisbank Systeem Technische Documentatie
 
 ## 📝 Samenvatting
 
-Dit kennisbank systeem is een gestructureerde verzameling van markdown bestanden, georganiseerd in categorieën en verrijkt met consistente styling via Everforest theming. Het systeem combineert de kracht van VS Code, markdown en CSS voor een prettige documentatie ervaring.
+Een gedetailleerde technische beschrijving van het kennisbank systeem, inclusief de architectuur, componenten en werkwijze.
 
 ## 🎯 Belangrijkste punten
 
-- <span class="highlight-success">✓</span> Gestructureerde mappenstructuur voor optimale organisatie
-- <span class="highlight-success">✓</span> Consistente styling met Everforest thema
-- <span class="highlight-success">✓</span> Markdown-gebaseerd voor maximale compatibiliteit
-- <span class="highlight-success">✓</span> Uitgebreide opmaak mogelijkheden via CSS classes
-- <span class="highlight-info">ℹ</span> Werkt zowel in VS Code als Obsidian
+- <span style="color: #22c55e;">✓</span> Automatische categorisatie van bestanden
+- <span style="color: #22c55e;">✓</span> Flexibele template structuur
+- <span style="color: #22c55e;">✓</span> Markdown-gebaseerde documentatie
+- <span style="color: #ef4444;">⚠</span> Vereist discipline in naamgeving en structuur
 
 ## 🔍 Details
 
-### Technische Architectuur
+> [!NOTE]+ Architectuur
+> Het systeem is opgebouwd uit de volgende componenten:
+> - .cursorrules: Configuratie voor categorisatie en templates
+> - Mappenstructuur: Hiërarchische organisatie van kennis
+> - Markdown bestanden: De eigenlijke kennisdocumenten
 
-1. <span class="highlight-info">📂</span> **Bestandsstructuur**
+> [!WARNING]+ Belangrijke overwegingen
+> - Zorg voor consistente bestandsnaming
+> - Volg de template structuur
+> - Gebruik de juiste tags en categorieën
 
-plaintext
-knowledge/
-├── Technologie/
-│ ├── Programmeren/
-│ ├── Netwerken/
-│ ├── Databases/
-│ └── AI en Machine Learning/
-├── Wetenschap/
-├── Persoonlijke ontwikkeling/
-├── Projecten/
-└── Referenties/
+## 📊 Visualisaties
 
-2. **Bestandsverwerking**
-- Nieuwe .md bestanden worden automatisch gecategoriseerd op basis van rules
-- Templating systeem voor consistente documentstructuur
-- Variabelen worden dynamisch ingevuld bij creatie
+### Systeem Architectuur
+```mermaid
+graph TD
+    A[.cursorrules] -->|Configureert| B[File Handler]
+    B -->|Categoriseert| C[Kennisbestanden]
+    C -->|Opgeslagen in| D[Mappenstructuur]
+    E[Templates] -->|Toegepast op| C
+```
 
-3. **Technische Componenten**
-- **Parser**: Verwerkt markdown syntax naar HTML
-- **Rules Engine**: 
-  - Matcht bestanden op basis van extensie/pad
-  - Voert gedefinieerde acties uit (move, rename, etc)
-- **Template Engine**:
-  - Ondersteunt variabele substitutie
-  - Biedt voorgedefinieerde layouts
-  - Handhaaft consistente structuur
-
-4. **Styling Systeem**
-
-/ Voorgedefinieerde kleuren /
-:root {
---success: #22c55e;
---warning: #ef4444;
---info: #3b82f6;
---neutral: #eab308;
-}
-/ Highlight classes /
-.highlight-success { color: var(--success); }
-.highlight-warning { color: var(--warning); }
-.highlight-info { color: var(--info); }
-.highlight-neutral { color: var(--neutral); }
-
-
-5. **Integraties**
-- VS Code extensies:
-  - Markdown All in One
-  - Markdown Preview Enhanced
-  - Paste Image
-- Obsidian plugins:
-  - Dataview
-  - Calendar
-  - Graph View
+### Proces Flow
+```mermaid
+sequenceDiagram
+    participant U as Gebruiker
+    participant S as Systeem
+    participant F as Bestandssysteem
+    U->>S: Maakt nieuw kennisbestand
+    S->>S: Past template toe
+    S->>F: Categoriseert bestand
+    F-->>U: Bevestiging
+```
 
 ## 📚 Bronnen
 
-- [VS Code Markdown Documentation](https://code.visualstudio.com/docs/languages/markdown)
-- [Obsidian Help](https://help.obsidian.md)
+- [Markdown Guide](https://www.markdownguide.org/)
+- [Mermaid Diagramming](https://mermaid-js.github.io/)
 
 ## 🔗 Gerelateerde onderwerpen
 
-- [[Markdown Syntax]]
-- [[VS Code Setup]]
-- [[Obsidian Setup]]
-- [[Knowledge Management]]
+- [[Templates]]
+- [[Richtlijnen]]
+- [[Markdown]]
 
 ## 📝 Notities
 
-Status: <span style="color: #22c55e;">●</span> Actief  
-Prioriteit: <span style="color: #eab308;">●</span> Medium
+Status: <span style="color: #22c55e;">●</span> Actief
+Prioriteit: <span style="color: #22c55e;">●</span> Hoog
 
 ## 🏷️ Tags
 
-#kennismanagement #markdown #vscode #obsidian #documentatie
+#kennisbank #systeem #documentatie #technisch
