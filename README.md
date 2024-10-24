@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🧠 Kennisbank Systeem
 
 ## 📝 Beschrijving
@@ -85,3 +86,7 @@ Dit project is gelicenseerd onder de MIT License - zie het LICENSE bestand voor 
 - [[Kennisbank_Systeem]] - Technische details over het systeem
 - [[Templates]] - Beschikbare templates en hun gebruik
 - [[Richtlijnen]] - Best practices voor het documenteren
+=======
+# knowledge-base-system
+Een gestructureerd kennisbank systeem gebaseerd op Markdown bestanden
+>>>>>>> 0c5ddda99c0b66758010d561ae8f58119eab458c
